@@ -1,0 +1,86 @@
+// Command Prompt 
+
+
+MySQL -u root -p -P 330   
+
+
+Password: admin
+
+
+SHOW DATABASES;
+
+
+USE users_db;
+
+
+CREATE DATABASE users_db;
+
+
+USE users_db;
+
+
+SOURCE D:/Shellovation/CurrencyConverter/instance/users_dump.sql
+
+
+SHOW TABLES;
+
+
+SELECT * FROM user;
+
+
+
+
+// Open MySQL workbench 
+
+root password is admin for localhost 330 
+
+Go to the server menu and Select Data Import.
+
+In the data import wizard, select Import from Self-Contained File.
+
+Click on ... next to Import from self-Contained File and locate your sql file(D:\Shellovation\CurrencyConverter\instance\users_dump.sql).
+
+Choose the Data to import(select users_db or create a new DB if it doesn't exist).
+
+Start Import..
+
+In the navigator panel Choose Schema. 
+
+Check if users_db is there are not, if not refresh all.
+
+or else then open new query in MySQL and enter the below commands:
+
+enter the SHOW DATABASES;
+
+and then SELECT * FROM user;
+
+and then enter USE users_db;
+
+SHOW TABLES;
+
+and at last SELECT * FROM user;
+
+
+
+
+// python -m venv myvenv
+   
+   myvenv\Scripts\activate
+   
+   pip install flask
+
+   pip install werkzeug
+
+   pip install flask-sqlalchemy
+   
+   pip install -r requirements.txt 
+
+   in the command navigate to your currencyconverter folder then run the following commands
+  
+   python CCBackend/app.py
+
+   http://127.0.0.1:5000 click on that local host number 
+
+Lohitha 
+
+Lohitha48
